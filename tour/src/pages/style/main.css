@@ -1,0 +1,707 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    min-height: 100%;
+    width: 100%;
+}
+
+:root {
+    --colorBackground: #F4E2A3;
+    --colorButtonBron: rgba(255, 199, 0, 0.9);
+
+}
+
+@font-face {
+    font-family: inter;
+    src: url(../fonts/inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: inter-bold;
+    src: url(../fonts/inter/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: inter-regular;
+    src: url(../fonts/inter/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: inter-medium;
+    src: url(../fonts/inter/static/Inter-Medium.ttf);
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    width: 100vw;
+    min-height: 100%;
+    height: auto;
+
+    background: linear-gradient(180deg, rgba(244,226,163,1) 0%, rgba(244,226,163,0.1) 75%, rgba(244,226,163,1) 100%);
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    width: auto;
+    height: auto;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    
+}
+
+.first__screen {
+    width: auto;
+    height: auto;
+}
+
+
+/* Шапка */
+
+.container {
+    width: 81.25%;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.main-header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 29px;
+
+}
+
+.header__logo {
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.firm__logo {
+    width: 70px;
+    height: 70px;
+
+}
+
+.firm__name {
+    margin-left: 24px;
+    font-size: 24px;
+    font-family: inter-regular;
+}
+
+.user {
+    display: inline-flex;
+    align-items: center;
+}
+
+.user__logo {
+    width: 70px;
+    height: 70px;
+    margin-left: 31px;
+
+}
+
+.user__registration, .razdelitel, .user__enter  {
+    margin-right: 8px;
+    font-size: 1.5em;
+    font-family: inter-medium;
+
+}
+
+/* контент первой страницы */
+
+.main__content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main__text {
+    margin-top: 164px;
+}
+
+.first__text {
+    font-size: 5em;
+    font-family: inter-bold;
+    letter-spacing: .05vw;
+}
+
+.second__text {
+    font-size: 1.5em;
+    font-family: inter-regular;
+    letter-spacing: .05vw;
+    text-align: center;
+}
+
+.main__image {
+    width: 566px;
+    height: 474px;
+
+}
+
+/* Карточка */
+
+
+.main__cards {
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.card {
+    position: relative;
+    float: left;
+    
+}
+
+.card__back {
+    left: 0;
+    top: 0;
+    align-items: center;
+}
+
+.card__image {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+
+    width: 80%;
+
+    z-index: 5;
+
+}
+
+.card__footer {
+    width: 100%;
+    position: absolute;
+    bottom: 38px;
+    text-align: center;
+
+}
+
+
+.card__button {
+    font-size: 1em;
+    color: #fff;
+    padding: 5px 7px;
+    background-color: rgba(255, 199, 0, 0.9);
+    border-radius: 15px;
+    border: none;
+
+}
+
+.card__name {
+    font-size: 1em;
+    font-family: inter;
+    margin-bottom: 19px;
+    align-items: center;
+    text-align: center;
+
+}
+
+/*Раздел с отелями*/ 
+
+.second__screen {
+    width: 100%;
+    height: auto;
+}
+
+.hotel__card {
+    margin-top: 140px; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+    
+}
+
+.hotel__description {
+    position: relative;
+    text-align: center;    
+
+}
+
+.hotel {
+    top: 0;
+
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+
+    position: absolute;
+
+}
+
+
+.hotel__name {
+    padding:10% 0;
+    
+    font-size: 1.625em;
+    font-family: inter-regular;
+
+}
+
+.hotel__desc__text {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 80%;
+    
+
+    font-size: 1.125em;
+    font-family: inter-medium;
+
+    margin-bottom: 10%;
+}
+
+.hotel__price {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+
+}
+
+.hotel__price  p {
+    font-family:Arial, Helvetica, sans-serif;
+    width: auto;
+    font-size: 3em;
+    font-weight: 550;
+
+}
+
+.hotel__price img {
+    width: 45px;
+    height: 45px;
+}
+
+.hotel button {
+    background-color: var(--colorButtonBron);
+    color: #fff;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+
+    padding:17px 25px 17px 27px;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 140px;
+    text-align: center;
+    
+}
+
+.feedback {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.feedback h2 {
+    font-size: 1.5em;
+}
+
+.footer__text p {
+    font-size: 1em;
+    margin-top: 39px;
+}
+
+
+
+/* Media */
+
+@media screen and (min-width: 1520px) {
+    .container{
+        width: 1235px;
+    }    
+}
+
+@media screen and (max-width: 1410px) {
+    .hotel__img {
+        width: 70%;
+        height: 70%;
+    }
+
+    /* .hotel__name {
+        margin-top: 25%;
+    } */
+
+    .hotel__desc__text {
+        text-align: justify;
+    }
+
+    .hotel__price {
+        margin-bottom: 15%;
+    }
+
+}
+
+  @media screen and (max-width: 1320px) {
+
+    .hotel__card {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }    
+
+    .hotel__img {
+        width: 100%;
+    }
+
+    .hotel__image {
+        width: 750px;
+        height: 300px;
+     
+    }
+
+    .hotel__name {
+        font-size: 1.2em;
+        margin: 0;
+        padding: 5% 0 2% 0;
+    } 
+
+    .hotel__price {
+        margin-bottom: 2%;
+    } 
+
+    .hotel__description {
+        margin-top: 2%;
+        align-items: center;
+        height: 100%;
+
+    }
+
+    .hotel {
+        margin: 0 5px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .hotel__desc__text {
+        font-size: 1em;
+        height: auto;
+        text-align: center;
+        align-items: center;
+
+        margin-bottom: 5%;
+
+    }
+
+    .hotel__price p {
+        font-size: 2em;  
+        margin-bottom: none;     
+    }
+
+    .hotel__price img {
+        width: 28px;
+        height: 28px;
+    }
+
+} 
+
+
+@media screen and (max-width: 1210px) {
+
+    .main__image{ 
+        width: 396.2px;
+        height: 331.8px;
+
+    }
+    
+    .main__cards {
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+    }
+
+    .card {
+        width: 70%;
+        height: 70%;   
+        align-items: center;
+
+        margin-bottom: 20px;
+
+    }
+    
+    .card__image {
+        width: 80%;
+        height: auto;
+
+    }
+
+    .card__footer {
+        bottom: 8%;
+    }
+
+    .card__name {
+        font-size: 90%;
+        margin: 5px;
+        margin-bottom: 5%;
+
+    }
+
+    .card__back {
+        width: 100%;
+        height: 100%;
+    }
+
+} 
+
+
+@media screen and (max-width: 1210px) {
+    .main__image{ 
+        width: 316.96px;
+        height: 265.44px;
+
+    }
+
+    .main__content {
+        align-items: center;
+    }
+
+    .main__text {
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width:950px) {
+
+    .main__text {
+        text-align: center;
+    }
+
+    .first__text {
+        font-size: 3em;
+
+    }
+
+    .second__text {
+        font-size: 1.5em;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    /* шапка */
+
+    .firm__logo {
+        width: 38.3px;
+        height: 38.3px;
+    }
+
+    .user__logo {
+        width: 38.3px;
+        height: 38.3px;
+        margin: 0;
+    }
+
+    .user__registration, .user__enter, .razdelitel {
+        display: none;
+    }
+
+    .firm__name {
+        font-size: 0.75em;
+        margin-left: 5px;    
+    }
+
+    /* Контент первой страницы */
+
+    .main__content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        margin-top: 10%;
+    }
+
+    .main__text {
+        text-align: center;
+        margin: 10px;
+        width: 50%;
+    }
+
+    .first__text {
+        font-size: 3em;
+        width: auto;
+
+    }
+
+    .second__text {
+        padding-left: 7px;
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    .main__image {
+        width: 70%;
+        height: 70%;
+    }
+
+    /* Карточки */
+
+    .main__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+
+        margin-bottom: 15%;
+    }
+
+    .card {
+        width: 70%;
+        height: 70%;   
+        align-items: center;
+
+        margin-bottom: 20px;
+
+    }
+    
+    .card__image {
+        width: 80%;
+        height: auto;
+
+    }
+
+    .card__footer {
+        bottom: 8%;
+    }
+
+    .card__name {
+        font-size: 90%;
+        margin: 5px;
+        margin-bottom: 5%;
+
+    }
+
+    .card__back {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* второй экран */
+
+    .second__screen {
+        
+    }
+
+    .hotel__card {
+        margin: 0;
+    }
+
+    .hotel__description {
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 10%;
+
+    }
+
+    .hotel__img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .hotel__image {
+        width: 90%;
+        height: 150px;
+    }
+
+    .hotel {
+        top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hotel__name {
+        font-size: 1em;
+        padding: 2% 0;
+
+    }
+
+    .hotel__desc__text {
+        font-size: 0.5em;
+        height: auto;
+        text-align: center;
+        align-items: center;
+
+        margin-bottom: 5%;
+
+    }
+
+    .hotel__price p {
+        font-size: 1em;  
+        margin-bottom: none;     
+    }
+
+    .hotel__price img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .hotel button {
+        font-size: 0.75em;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 30px;
+    
+        padding:5px 8px 5px 9px;
+    }
+
+
+
+    /* Футер */
+
+    footer {
+        margin-top: 5%;
+    }
+
+    .footer__text p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 0.5em;
+    }
+
+    .feedback {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+
+        align-items: center;
+    }
+
+    .feedback h2 {
+        font-size: 0.75em;
+    }
+
+
+}
